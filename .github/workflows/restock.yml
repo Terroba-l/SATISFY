@@ -1,9 +1,12 @@
 name: SATISFY restock monitor
 
 on:
-  schedule:
-    # Toutes les 15 minutes (le cron GitHub n'est pas garanti à la minute près).
-    - cron: "*/15 * * * *"
+  # Auto-schedule désactivé : le compte GitHub est verrouillé (billing) et chaque
+  # run planifié échoue en ~3 s sans runner, ce qui spammait des notifications.
+  # Pour réactiver une fois la facturation débloquée, dé-commente le bloc ci-dessous.
+  # schedule:
+  #   # Toutes les 15 minutes (le cron GitHub n'est pas garanti à la minute près).
+  #   - cron: "*/15 * * * *"
   workflow_dispatch: {}  # exécution manuelle depuis l'onglet Actions
 
 # Nécessaire pour recommiter state.json dans le repo.
