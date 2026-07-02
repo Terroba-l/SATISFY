@@ -6,6 +6,11 @@ Tee (Moonstruck)**. Il tourne gratuitement via **GitHub Actions** et envoie une
 notification push sur ton téléphone via **[ntfy.sh](https://ntfy.sh)** dès qu'une
 variante repasse de *indisponible* à *disponible*.
 
+> 💡 **Compte GitHub bloqué / pas envie d'Actions ?** Une version 100% gratuite
+> tournant sur **Google Apps Script** (aucune carte, ton compte Google) est
+> fournie dans [`apps-script/`](apps-script/) — même logique, notifs ntfy
+> identiques.
+
 ## Comment ça marche
 
 À chaque exécution, [`check.py`](check.py) :
